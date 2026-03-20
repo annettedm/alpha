@@ -1,0 +1,18 @@
+<h1>Create Molly</h1>
+
+<%# <%= form_for @molly, html: { data: { turbo: false }} do |f| %> 
+<%= form_with(model: @molly, html: { data: { turbo: false }}) do |f| %>
+  
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :description %><br>
+      <%= f.text_area :description %>
+    </p>
+    <p>
+      <%= f.submit "Save", disable_with: 'Submiting...' %>
+    </p>
+<% end %>
+  

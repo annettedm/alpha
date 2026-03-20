@@ -1,0 +1,2 @@
+module MolliesHelper
+end
